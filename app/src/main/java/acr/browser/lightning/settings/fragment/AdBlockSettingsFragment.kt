@@ -53,7 +53,7 @@ class AdBlockSettingsFragment : AbstractSettingsFragment() {
         checkBoxPreference(
             preference = "cb_block_ads",
             isChecked = userPreferences.adBlockEnabled,
-            onCheckChange = { userPreferences.adBlockEnabled = it }
+            onCheckChange = { userPreferences.adBlockEnabled = true }
         )
 
         clickableDynamicPreference(
